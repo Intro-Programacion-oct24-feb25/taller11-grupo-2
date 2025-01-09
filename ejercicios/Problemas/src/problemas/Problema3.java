@@ -60,8 +60,7 @@ public class Problema3 {
                 } else {
                     if (promedio >= 9.1 && promedio <= 10) {
                         cualidad = "SobreSaliente";
-                    } else {
-                    }
+                    } 
                 }
             }
         }
