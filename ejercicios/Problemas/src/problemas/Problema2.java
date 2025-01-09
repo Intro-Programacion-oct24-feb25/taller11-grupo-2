@@ -24,21 +24,19 @@ public class Problema2 {
         
         switch(tipo){
             case(1):
-                variable = obtenerAreaCuadrado();
+                obtenerAreaCuadrado();
                 break;
             case(2):
-                variable = obtenerAreaTriangulo();
+                obtenerAreaTriangulo();
                 break;
             case(3):
-                variable = obtenerAreaRectangulo();
+                obtenerAreaRectangulo();
                 break;
         }
         
-        System.out.println(variable);
-            
     }  
     
-        public static String obtenerAreaCuadrado(){
+        public static void obtenerAreaCuadrado(){
             Scanner entrada = new Scanner(System.in);
             
             int lado;
@@ -52,10 +50,10 @@ public class Problema2 {
             cadena = String.format ("El área del cuadrado de lado: %d es: %d", 
                     lado, area);
             
-            return cadena;
+            System.out.println(cadena);
         }
         
-        public static String obtenerAreaTriangulo(){
+        public static void obtenerAreaTriangulo(){
             Scanner entrada = new Scanner(System.in);
             
             int baseT;
@@ -72,10 +70,10 @@ public class Problema2 {
             cadena = String.format ("El área del triangulo de base: %d y "
                     + "altura: %d es: %d", baseT, alturaT, areaT);
             
-            return cadena;
+            System.out.println(cadena);
         }
         
-        public static String obtenerAreaRectangulo(){
+        public static void obtenerAreaRectangulo(){
             Scanner entrada = new Scanner(System.in);
             
             int baseR;
@@ -92,7 +90,7 @@ public class Problema2 {
             cadena = String.format ("El área del rectángulo de base: %d y "
                     + "altura: %d es: %d", baseR, alturaR, areaR);
             
-            return cadena;
+            System.out.println(cadena);
     }
     
 }
