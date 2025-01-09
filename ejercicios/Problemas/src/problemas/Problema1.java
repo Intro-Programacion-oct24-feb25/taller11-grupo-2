@@ -21,7 +21,7 @@ public class Problema1 {
         imprimirDatos(informacion);
     }
 
-    public static String imprimirDatos(int[][] datos) {
+    public static void imprimirDatos(int[][] datos) {
 
         String cadena = "";
         for (int i = 0; i < datos.length; i++) {
@@ -32,7 +32,7 @@ public class Problema1 {
             }
         }
         System.out.println(cadena);
-        return null;
+       
     }
 
 }
